@@ -67,8 +67,6 @@ cd otakufl8ma
 2. **تثبيت التبعيات**
 ```bash
 npm install
-# أو
-yarn install
 ```
 
 3. **تشغيل التطبيق**
@@ -76,6 +74,11 @@ yarn install
 npm start
 # أو
 expo start
+```
+
+**ملاحظة**: إذا واجهت مشاكل في التثبيت، جرب:
+```bash
+npm install --legacy-peer-deps
 ```
 
 4. **فتح التطبيق**

@@ -4,7 +4,7 @@ import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { createStackNavigator } from '@react-navigation/stack';
 import { StatusBar } from 'expo-status-bar';
 import { Ionicons } from '@expo/vector-icons';
-import { Provider as PaperProvider } from 'react-native-paper';
+
 
 // Screens
 import HomeScreen from './src/screens/HomeScreen';
@@ -55,22 +55,20 @@ function TabNavigator() {
 
 export default function App() {
   return (
-    <PaperProvider>
-      <NavigationContainer>
-        <Stack.Navigator>
-          <Stack.Screen 
-            name="MainTabs" 
-            component={TabNavigator} 
-            options={{ headerShown: false }}
-          />
-          <Stack.Screen 
-            name="AnimeDetail" 
-            component={AnimeDetailScreen}
-            options={{ title: 'تفاصيل الأنمي' }}
-          />
-        </Stack.Navigator>
-        <StatusBar style="auto" />
-      </NavigationContainer>
-    </PaperProvider>
+    <NavigationContainer>
+      <Stack.Navigator>
+        <Stack.Screen 
+          name="MainTabs" 
+          component={TabNavigator} 
+          options={{ headerShown: false }}
+        />
+        <Stack.Screen 
+          name="AnimeDetail" 
+          component={AnimeDetailScreen}
+          options={{ title: 'تفاصيل الأنمي' }}
+        />
+      </Stack.Navigator>
+      <StatusBar style="auto" />
+    </NavigationContainer>
   );
 }
