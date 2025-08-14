@@ -210,6 +210,7 @@ const styles = StyleSheet.create({
     fontWeight: '600',
     color: '#333',
     marginBottom: 5,
+    textAlign: 'right',
   },
   episodeInfo: {
     fontSize: 12,
@@ -240,6 +241,7 @@ const styles = StyleSheet.create({
     fontWeight: '600',
     color: '#333',
     marginBottom: 5,
+    textAlign: 'right',
   },
   newsDate: {
     fontSize: 12,
@@ -267,6 +269,7 @@ const styles = StyleSheet.create({
     fontWeight: '600',
     color: '#333',
     marginBottom: 5,
+    textAlign: 'right',
   },
   discussionStats: {
     fontSize: 12,

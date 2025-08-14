@@ -187,11 +187,13 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
     color: '#333',
     marginBottom: 5,
+    textAlign: 'right',
   },
   animeGenres: {
     fontSize: 14,
     color: '#666',
     marginBottom: 10,
+    textAlign: 'right',
   },
   episodeInfo: {
     fontSize: 14,
