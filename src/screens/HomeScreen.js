@@ -8,7 +8,7 @@ import {
   Image,
   RefreshControl,
 } from 'react-native';
-import { LinearGradient } from 'expo-linear-gradient';
+
 import { Ionicons } from '@expo/vector-icons';
 import { getWeeklySchedule, getAnimeNews } from '../services/anilistApi';
 
@@ -47,13 +47,10 @@ export default function HomeScreen({ navigation }) {
         <RefreshControl refreshing={refreshing} onRefresh={onRefresh} />
       }
     >
-      <LinearGradient
-        colors={['#6366f1', '#8b5cf6']}
-        style={styles.header}
-      >
+      <View style={styles.header}>
         <Text style={styles.title}>🎌 OtakuFl8ma</Text>
         <Text style={styles.subtitle}>أخبار • مناقشات • جدول البث</Text>
-      </LinearGradient>
+      </View>
 
       <View style={styles.content}>
         {/* جدول البث */}
